@@ -1,0 +1,27 @@
+.header {
+  background: saddlebrown;
+}
+.header .wrapper {
+  border: 4px solid green;
+  justify-content: space-around;
+}
+.header .navclass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid black;
+  width: 100%;
+  background-color: saddlebrown;
+}
+.header .navclass a {
+  border-radius: 4px;
+  text-decoration: none;
+  margin: 0 2vh;
+  background-color: seagreen;
+  padding: 2vh 10vh;
+  font-size: 18px;
+}
+.header .navclass a:hover {
+  padding: 3vh 10vh;
+  background-color: #0de66b;
+}

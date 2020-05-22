@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Secret Family Recipe: </title>
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="wrapper">
+          <h1>Secret recipes</h1>
+      <nav class= "navclass" id="topnav">
+        <a class= "active" href="#">HOME</a>
+        <a href="#">RECIPES</a>
+        <a href="#">ABOUT US</a>
+        <a href="#">MORE INFO</a>
+
+        <div class="topright">
+        <a class="signup"href="#">Sign up</a>
+        <a class="login"href="#">Log in</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i> 
+        </a>
+        </div>
+      </nav>
+    </div>
+    </header>
+
+
+    <div class= "container">
+      <div class="imgwrapper">
+        <img src="assets/main_img.jpg"> </img> </div>
+        <div class="imgwrapper">
+          <img src="assets/main_img.jpg"> </img> </div>
+          <div class="imgwrapper">
+            <img src="assets/main_img.jpg"> </img> </div>
+
+
+
+   
+   <div class="footer">
+      <h2>Footer</h2>
+      </div>
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("topnav");
+        if (x.className === "navclass") {
+          x.className += "responsive";
+        } else {
+          x.className = "navclass";
+        }
+      }
+      </script> 
+    </body> 
+ 
+</html>
