@@ -1,27 +1,21 @@
 .header{
-    display: flex;
-    background: rgb(141, 156, 127);
+    width: 100%;
+    background: @navigation-bg;
     border-bottom: 5px solid darken(rgb(141, 156, 127), 10%);
+        h1{
+        width:40%;
+        text-align: center;
+        color: darken(@font-color, 30%);
+
+        }
 
     .wrapper {
-       display: inline-flex;
-       justify-content: center;
-       justify-content: space-evenly;
-       justify-content: space-around;
-        height: auto;
-        width: 100%;
-        padding: 3rem 0 0 0;
-
-          h1{
-          margin-left: 10rem;
-          color: darken(rgb(141, 156, 127), 30%);
-          text-align: center;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-
-          }
-    
+      display: flex;
+      justify-content: center;
+      justify-content: space-around;
+       align-items: center;
+       width: 100%;
+       padding-top: 3rem;
       }
       
       

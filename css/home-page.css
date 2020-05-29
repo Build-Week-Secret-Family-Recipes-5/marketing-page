@@ -1,6 +1,101 @@
-.wrapper {
+.container {
+  width: auto;
+  height: auto;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .top-content {
+  margin: 10px 80px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/Preprocessing-I/assets/landscape.jpeg");
   border: 4px solid red;
-  height: 30%;
+}
+.container .top-content .text-container {
+  position: absolute;
+  color: #fff;
+  max-width: 70%;
+  max-height: 70%;
+  display: block;
+  flex-direction: column;
+  text-align: center;
+}
+.container .top-content .text-container h2 {
+  font-size: 3vw;
+  text-shadow: 0 0 6rem rgba(0, 0, 1, 0.9);
+}
+.container .top-content .text-container h4 {
+  padding-bottom: 3vw;
+  margin-bottom: 3px;
+  border-bottom: 1px solid white;
+}
+.container .top-content .text-container p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 2vw;
+  line-height: 1.5;
+}
+.container .thisismiddle {
+  margin-bottom: 2vh;
   width: 100%;
+  display: flex;
+  align-items: space-around;
+  justify-content: center;
+  justify-content: space-evenly;
+  background-color: #8d9c7f;
+}
+.container .thisismiddle .middle-content p {
+  line-height: 1.8;
+}
+.container .middle-content {
+  margin: 20px 0 20px 0;
+  justify-content: flex-start;
+  align-content: right;
+  align-items: flex-end;
+  width: 40%;
+}
+.container .middle-content h2 {
+  border-bottom: 1px solid lightgoldenrodyellow;
+  letter-spacing: 0.2em;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: black;
+}
+.container .middle-content-right {
+  margin: 20px 0 20px 0;
+  justify-content: flex-end;
+  align-content: right;
+  align-items: flex-end;
+  width: 40%;
+}
+.container .middle-content-right h2 {
+  border-bottom: 1px solid lightgoldenrodyellow;
+  letter-spacing: 0.2em;
+  margin-bottom: 30px;
+  font-size: 30px;
+  color: black;
+}
+.container .middle-content-right table {
+  text-align: center;
+}
+.container .middle-content-right table,
+.container .middle-content-right th,
+.container .middle-content-right td {
+  border: 1px solid black;
+}
+.container .middle-content-right th,
+.container .middle-content-right td {
+  padding: 15px;
+}
+.container .middle-content-right table#t01 tr:nth-child(even) {
+  background-color: #8d9c7f;
+}
+.container .middle-content-right table#t01 tr:nth-child(odd) {
+  background-color: #738365;
 }

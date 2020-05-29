@@ -1,17 +1,15 @@
 // Navigation Styles here
     
 .navclass{
-    overflow: hidden;
-       float: right;
-       width: 60%;
+    display: inline-flex;
+    justify-content: space-around;
+    font-size: 24px;
+    max-width: 60%;
 
        a{
-        display: block;
         text-transform: uppercase;
         float: left;
         color: #f2f2f2;
-        //color: darken(rgb(141, 156, 127), 30%);
-        text-align: center;
         padding: 4vh 4vh;
         text-decoration: none;
         font-size: 17px;
@@ -19,48 +17,91 @@
        }
         
             a:hover{
-            border-bottom: 3px solid darken(rgb(141, 156, 127), 20%);
-            background-color: lighten(rgb(141, 156, 127), 10%);
+            border-bottom: 3px solid darken(@font-color, 20%);
+            background-color: lighten(@button-bg, 10%);
+            color: darken(@font-color, 20%);
     }
      
            a.active {
-           background-color: lighten(rgb(141, 156, 127), 10%);
-            color: darken(rgb(141, 156, 127), 20%);
+            background-color: lighten(@button-bg, 10%);
+            color: darken(@font-color, 20%);
     }
-     
-          .topright {
-           float: right;
-          }
+
 
 
 }
-
-.navclass .icon {
+label {
+    margin: 0 10px 0 0;
+    font-size: 26px;
+    line-height: 70px;
     display: none;
-  }
+}
 
-@media screen and (max-width: 600px) {
-    .navclass a:not(:first-child) {
-        display: none;
+#toggle {
+    display: none;
+}
+
+//Media query for Mobile
+@media @mobile {
+    .header .wrapper{
+        justify-content: space-around;
+        justify-content: center;
+        justify-content: space-between;
+    h1{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
     }
-    .navclass a.icon {
-      float: right;
-      display: block;
     }
-  }
-  
-  @media screen and (max-width: 600px) {
-    .navclass.responsive {
-        position: relative;
+    label {
+        display: block;
+        cursor: pointer;
     }
-    .navclass.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
+    .navclass {
+        display:none;
+        width: 100%;
+      
     }
-    .navclass.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
+    .navclass a{
+        display: block;
+         width: 100%;
     }
-  }
+
+    #toggle:checked + .navclass{
+        display: block;
+
+    }
+
+}
+//Media query for tablet width
+@media @desktop {
+    .header .wrapper{
+        justify-content: space-around;
+        justify-content: center;
+        justify-content: space-between;
+    h1{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    }
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .navclass {
+        display:none;
+        width: 100%;
+      
+    }
+    .navclass a{
+        display: block;
+         width: 100%;
+    }
+
+    #toggle:checked + .navclass{
+        display: block;
+
+    }
+
+}

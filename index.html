@@ -9,55 +9,81 @@
     <title>Secret Family Recipe: </title>
 </head>
 <body>
-
     <header class="header">
-
         <div class="wrapper">
           <h1>Secret recipes</h1>
-      <nav class= "navclass" id="topnav">
+          <label for="toggle" class="label">&#9776;</label>
+        <input type="checkbox" id="toggle"/>
+      <nav class= "navclass">
+        <div>
         <a class= "active" href="#">HOME</a>
-        <a href="#">RECIPES</a>
-        <a href="#">ABOUT US</a>
-        <a href="#">MORE INFO</a>
-
-        <div class="topright">
-        <a class="signup"href="#">Sign up</a>
-        <a class="login"href="#">Log in</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i> 
-        </a>
-        </div>
+        <a href="#">Contact</a>
+        <a href="aboutus.html">ABOUT US</a>
+      </div>
+      <div>
+        <a class="topright"href="#">Log in</a>
+       </div>
       </nav>
     </div>
     </header>
 
 
     <div class= "container">
-      <div class="imgwrapper">
-        <img src="assets/main_img.jpg"> </img> </div>
-        <div class="imgwrapper">
-          <img src="assets/main_img.jpg"> </img> </div>
-          <div class="imgwrapper">
-            <img src="assets/main_img.jpg"> </img> </div>
+
+      <div class="top-content">
+
+        <img src="assets/main_img.jpg"> </img>
+        
+          <section class="text-container">
+               <h2>Special Recipes</h2>
+    
+               <h4> ...and secrets</h4>
+              
+               <p>A secure place to store your secret recipes</p>
+      
+           </div>
+
+      </section>
+      
+        <div class="thisismiddle">
+          <section class="middle-content">
+          
+              <h2>More Info...</h2>
+              <p>Those of you who are having hard time to keep track of their recipes in a hard-copied notebook/cards and thus, find the need to have somewhere secure to store their recipes as well as look for new ones to make their savory dishes, you've come to the right place!</p>
+    
+        
+           </section>
+           <section class="middle-content-right">
+            <h2>Top favorite tags</h2>
+                  <ul>
+                  <table id="t01" style="width: 100%;">
+                   <tr>
+                     <td><a href="#">Spicy food</a></td>
+                   </tr>
+                   <tr>
+                     <td><a href="#">Secret Salad</a></td>
+                   </tr>
+                   <tr>
+                     <td><a href="#">Special Desert</a></td>
+                   </tr>
+                   <tr>
+                     <td><a href="#">Indian Food</a></td>
+                   </tr>
+                   <tr>
+                     <td><a href="#">Seafood</a></td>
+                   </tr>
+                 </table>
+               </ul>
+                  </section>
+    
+          </div>
 
 
-
-   
-   <div class="footer">
-      <h2>Footer</h2>
-      </div>
     </div>
-  <!-- adding script for hamburger mediaquery -->
-    <script>
-      function myFunction() {
-        var x = document.getElementById("topnav");
-        if (x.className === "navclass") {
-          x.className += "responsive";
-        } else {
-          x.className = "navclass";
-        }
-      }
-      </script> 
+       <div class="footertag-class">
+        <h2>Copyright Secret Recipes!</h2>
+        </div>
+
     </body> 
  
 </html>
