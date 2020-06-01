@@ -9,7 +9,7 @@
   .custom-flex(column, center, center);
 
   img {
-    width: 100%;
+    max-width: 100%;
     border-radius: 3%;
     filter: brightness(50%);
   
@@ -81,8 +81,8 @@
     align-content: right;
     align-items: flex-end;
     width: 40%;
-    @media @mobile{
-      width: 100%;
+    @media @mobile, @tablet{
+      width: 90%;
       line-height: 1.8;
       height: 50vw;
       font-stretch: 30px;
@@ -95,7 +95,7 @@
     margin-bottom: 20px;
     font-size: 30px;
     color: darken(rgb(141, 156, 127), 30%);
-    @media @mobile{
+    @media @mobile, @tablet{
       text-align: center;
     }
   }
@@ -114,8 +114,8 @@
       color: rgb(141, 156, 127);;
   
     }
-    @media @mobile{
-      width: 100%;
+    @media @mobile, @tablet{
+      width: 90%;
 
     }
 
