@@ -55,16 +55,22 @@
     justify-content: center;
     justify-content: space-evenly;
     background-color: rgb(141, 156, 127);
-    @media @mobile {
+    @media @mobile, @tablet {
       .custom-flex(column, center, center);
       width: 100%;
+      justify-content: space-evenly;
     }
+    
   }
   .thisismiddle .middle-content p {
     line-height: 1.8;
     font-size: 18px;
     text-align: center;
     @media @mobile{
+      width: 100%;
+      line-height: 1.8;
+    }
+    @media @tablet {
       width: 100%;
       line-height: 1.8;
     }
@@ -196,7 +202,7 @@
       background-color: darken(@main-bg, 20%);
      }
 
-     @media @mobile{
+     @media @mobile, @tablet{
      .first-section{
        align-items: center;
        align-content: center;
@@ -251,7 +257,7 @@
         background-color: darken(@main-bg, 20%);
        }
   
-       @media @mobile{
+       @media @mobile, @tablet{
        .second-section{
          align-items: center;
          align-content: center;
@@ -304,11 +310,11 @@
     font-style: italic;
   }
   }
-  .third-section{
+  .third-section:hover{
     background-color: darken(@main-bg, 20%);
    }
 
-   @media @mobile{
+   @media @mobile, @tablet{
    .third-section{
      align-items: center;
      align-content: center;
@@ -359,11 +365,11 @@
       font-style: italic;
     }
     }
-    .fourth-section{
+    .fourth-section:hover{
       background-color: darken(@main-bg, 20%);
      }
   
-     @media @mobile{
+     @media @mobile, @tablet{
      .fourth-section{
        align-items: center;
        align-content: center;
